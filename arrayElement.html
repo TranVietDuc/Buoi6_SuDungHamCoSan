@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<hn style="font-size: 32px">Get Array Element</hn>
+<br/>
+<input type="text" id="txtValue">
+<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array()">
+<input type="button" id="btnDisplay" value="Display" onclick="display_array()">
+<div id="result">Hello</div>
+<script>
+var array =[];
+function add_element_to_array()
+{
+    let i = document.getElementById("txtValue").value;
+        array.push(i +" ");
+ document.getElementById("txtValue").value = "";
+}
+function display_array() {
+    document.getElementById("result").innerHTML = "a[] = " + array ;
+}
+</script>
+
+</body>
+</html>
